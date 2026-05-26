@@ -1,7 +1,32 @@
+let h1 = document.querySelector(".head-1");
 
-function getStudent(){
-fetch("http://localhost:8080/students")
-.then((response) => response.json())
-.then((data) => console.log(data))
-.catch((error) => console.log(error));
+async function getStudent(){
+
+    try{
+
+        const response = await fetch("http://localhost:8080/students");
+
+        if(response.ok){
+
+           const data = await response.json();
+
+            console.log(data);
+
+            h1.textContent = "Got the List of Records";
+            h1.style.color = "green";
+
+        }else{
+
+            throw new Error("Error happens")
+        
+        }
+
+    }catch(error){
+
+        h1.textContent = "Server Connection Failed";
+        h1.style.color = "red";
+
+        console.log(error);
+    }
 }
+
