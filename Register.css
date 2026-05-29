@@ -13,6 +13,8 @@ input{
     background: rgba(255,255,255,0.1);
     border: 1px solid rgba(255,255,255,0.3);
     border-radius: 10px;
+    transition: all 0.3s ease;
+    
 }
 
 
@@ -116,4 +118,18 @@ button:hover{
 
 body{
     margin: 0;
+}
+
+input:focus{
+    outline: none;
+
+    border: 1px solid #00ff88;
+
+    box-shadow: 0 0 15px rgba(0,255,136,0.5);
+
+    transform: scale(1.03);
+}
+
+input::placeholder{
+    color: rgba(255,255,255,0.7);
 }
