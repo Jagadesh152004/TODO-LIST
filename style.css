@@ -48,3 +48,10 @@ body{
 .link:hover{
     color: azure;
 }
+
+.Body{
+    background-image: url("/Images/BackCourse.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
