@@ -1,20 +1,20 @@
 
 label{
     color: white;
-    font-size: 30px;
+    font-size: 25px;
     margin-top: 30px;
 }
 
 input{
-    width: 250px;
-    padding: 10px;
-    margin-top: 15px;
+    text-align: left;
+    width: 350px;
+    padding: 13px;
+    margin-top: 10px;
+    background: rgba(255,255,255,0.1);
+    border: 1px solid rgba(255,255,255,0.3);
+    border-radius: 10px;
 }
 
-.H1{
-    color: blueviolet;
-    font-size: 50px;
-}
 
 .Form{
 
@@ -26,17 +26,38 @@ input{
 
     padding:30px ;
 
-/*    border:2px;
+    width: 550px;
+    height: 550px;
+
+    border:2px;
     border-style: solid;
     border-color: azure;
-*/
+
+    /* blur background */
+    background: rgba(165, 162, 162, 0.08);
+
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(30px);
+
+    border: 2px solid rgba(255,255,255,0.2);
+
+    border-radius: 15px;
+
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+
+
 }
 .FormContainer{
-    background-color: black;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 965px;
+
+    background-image: url("/Images/Back.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-repeat: no-repeat;
  
  /*   border:2px;
     border-style: solid;
@@ -46,7 +67,8 @@ input{
 }
 
 .button{
-    background-color: rgb(122, 20, 148);
+    border: 1px solid rgba(255,255,255,0.3);
+    background: rgba(255,255,255,0.15);
     font-size: 20px;
     margin-top: 30px;
     border-radius: 10px;
@@ -58,10 +80,40 @@ input{
     color: azure;
 }
 
-button:hover{
-    color: black;
-    background-color: chartreuse;
-    border-color: white;
-    border-style: solid;
 
+button{
+    transition: all 0.3s ease;
+}
+
+button:hover{
+    background-color: rgb(24, 219, 24);
+    color: black;
+    border: 2px solid rgb(245, 239, 239);
+    font-weight: bold;
+}
+
+.Div{
+
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 100vw;
+    max-width: 100%;
+
+    /* border: 1px;
+    border-style: solid;
+    border-color: white;
+     */
+}
+
+.Head{
+    text-align: center;
+    font-size: 60px;
+    color: white;
+}
+
+body{
+    margin: 0;
 }
