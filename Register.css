@@ -14,7 +14,7 @@ input{
     border: 1px solid rgba(255,255,255,0.3);
     border-radius: 10px;
     transition: all 0.3s ease;
-    
+    color: white;
 }
 
 
@@ -132,4 +132,23 @@ input:focus{
 
 input::placeholder{
     color: rgba(255,255,255,0.7);
+}
+
+.popup{
+    position: fixed;
+    top: 20px;
+
+    background-color: #22c55e;
+    color: white;
+
+    padding: 25px 35px;
+    border-radius: 10px;
+
+    font-size: 18px;
+
+    display: none;
+
+    z-index: 1000;
+
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
 }
